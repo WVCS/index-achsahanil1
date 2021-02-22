@@ -1,0 +1,37 @@
+body{
+  background-color: black;
+}
+
+p{
+  color: white;
+}
+
+ul.nav{
+  list-style-type: none; 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+  
+}
+
+li.nav{
+  display: inline;
+  font-family: 'Brush Script MT', cursive;
+  margin: 0;
+  padding: 50px;  
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 225%;
+}
+
+li a:hover {
+  color: red;
+  
+}
