@@ -5,7 +5,7 @@ body {
     "nav article"
     "ads article"
     "ads footer";
-  grid-template-rows: 80px 1fr 120px 70px;  
+  grid-template-rows: 80px 1fr 150px 170px;  
   grid-template-columns: 20% 1fr;body { 
   display: grid;
   grid-template-areas: 
