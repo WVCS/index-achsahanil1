@@ -107,4 +107,8 @@ div.HM{
 }
 
 
-
+div.img{
+  position: absolute;
+  top: 35%;
+  left: 950px;
+}
