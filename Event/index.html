@@ -1,137 +1,304 @@
 
 <html>
-  <body>
-  
-  
-  <div id="navbar"> 
-  <ul class="nav">
-  <li><a href="#">About</a></li>
-  <li><a href="#">Location</a></li>
-  <li><a href="#">Prep></li>
-  <li><a href="#">Pictures</a></li>
+	<body>
+  <header id="pageHeader">    
+    <ul>
+      
+  <li><a href="#pageFooter">Links</a></li>
+  <li><a href="#siteAds">Prep</a></li>
+  <li><a href="#mainNav">Location</a></li>
+  <li><a href="#mainArticle">Info</a></li>
+      
+       <div class="par" style = "position:relative; left:-10%; top:2px;">
+  <li>Watermelon Festival</li>
+         </div>
+ 
 </ul>
-</div> 
+    
+  </header>
+  <article id="mainArticle">
   
-  
-<br></br><br></br>
+    <div class= "HM">
+  <p>Information</p>
+    <p style = " font-size: 20px;font-weight: normal;" > This is our annual Watermelon Festival. This is an all you can eat, so bring you family, loved ones, freinds and anyone who loves watermelon. This tradtional festival started in the 1920s before the depression. First started by a family named Waterellion, who where the creators of this fantastic friut that we enjoy today.</p>
+      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/dOxWSZ0TlvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
-<!-- FLUID GRID -->
+    </div>
 
-<ul id="Grid">
-  <li></li>
+    
+  </article>
+  <nav id="mainNav">
+    
+    <div class= "HM">
+  <p>Location</p>
+    <p style = " font-size: 20px;font-weight: normal;" > We meet in Fresno California.
+      </p>
+      <a href="https://randomstreetview.com/" target="_blank">press this here for the EXACT location</a> <p style = " font-size: 20px;font-weight: normal;"> Yup, that is definetly the correct place</p> </div>
   
-  <li></li>
-  
-  <li></li>
-  
-  <li></li>
-  
-  
-  
-  
-  </body>
+  </nav>
+  <div id="siteAds">
+    
+     <div class= "HM">
+  <p>Preperation</p> 
+       <p style = " font-size: 20px;font-weight: normal;" > Just bring your self and a change of cloths. It is a one day event that is held on June 16th.</p>
+       </div>
+    
+    
+    
+  </div>
+  <footer id="pageFooter">
+    
+     <div class= "HM">
+       
+  <p>Links... Nope, but here is our logo</p> 
+       
+       </div>
+   
+    <img src= " https://i.redd.it/b9ptvdhfmgv51.png" style="height:170px;width:170px;">
+    
+    
+  </footer>
+     
+</body>
 
 <style>
   
-  body{
+ body { 
   Background-color: #ff4f4f;
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "nav article"
+    "ads article"
+    "ads footer";
+  grid-template-rows: 80px 1fr 150px 170px;  
+  grid-template-columns: 20% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header{
+  padding: 1.2em;
+  background: #44c767;
+  }
+footer, article, nav, div {
+  padding: 1.2em;
+  background: #44c767;
 }
 
 
-#navbar ul { 
-	margin: 0; 
-	padding: 15px; 
-	list-style-type: none; 
-	text-align: center; 
-	background-color: #44c767; 
-	} 
- 
-#navbar ul li {  
-	display: inline; 
-	} 
- 
-#navbar ul li a { 
-	text-decoration: none; 
-	padding: .2em 1em; 
-	color: black; 
-	background-color: #44c767; 
-  font-family: "Lucida Console", "Courier New", monospace;
-	} 
- 
-#navbar ul li a:hover { 
-	color: #000; 
-	background-color: #ff4f4f; 
-	} 
-
-
-
-
-div, ul, li{
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 50px;  
+    grid-template-columns: 1fr;
+ }
+}
+ul{
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-}
-
-/* -- FLUID GRID STYLES -- */
-
-#Grid{
-  margin-bottom: 40px;
-  text-align: justify;
-  font-size: 0.1px;
-}
-
-#Grid li{
-  display: inline-block;
   background: #44c767;
-  width: 46%;
-  padding-top: 46%; 
-  margin-bottom: 2.5%;
+  top: 0%;
+  
 }
 
-#Grid:after{
-  content: '';
-  display: inline-block;
-  width: 100%;
+li{
+  display: inline;
+  float: right;
+  overflow: hidden;
+  position:right;
 }
 
-#Grid .placeholder{
-  padding: 0;
-  border-top: 10px solid #922d8d; /* Border added to make element visible for demonstration purposes */
+li a{
+  display: block;
+  text-decoration: none;
+  padding: 15px 40px;
+  color: black;
+  font-size: 25px;
+   font-family: 'Courier New', monospace;
+  
 }
 
-/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
 
-/* 3 COL */
+
+a:hover{
+  background: #ff4f4f;
+  color: black;
+  
+}
+
+div.par{
+  background-color: ;
+  display: block;
+  text-decoration: none;
+  padding: 0px 40px;
+  color: Black;
+  font-size: 45px;
+  font-family:'Courier New', monospace;
+  font-weight: bold;
+  
+}
+
+div.HM{
+  color: black;
+  font-size: 25px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold; 
+  
+}
+
+
+img{
+  position: absolute;
+  top: 240%;
+  right: 10%;
+}
 
 @media (max-width: 800px){
-  #Grid li{
-    width: 31%;
-    padding-top: 31%;
-    margin-bottom: 3%;
-  }
-}
-
-/* 2 COL */
-
-@media (max-width: 600px){
-  #Grid li{
-    width: 48%;
-    padding-top: 48%;
-    margin-bottom: 4%;
-  }
-}
-
-/* SINGLE COL */
-
-@media (max-width: 400px){
-  #Grid li{
-    width: 100%;
-    padding-top: 100%;
-    margin-bottom: 5%;
-  }
-}
-
   
+  body { 
+  Background-color: #44c767;
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "nav article"
+    "ads article"
+    "ads footer";
+  grid-template-rows: 80px 1fr 150px 170px;
+  grid-template-columns: 20% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header{
+  padding: 1.2em;
+  background: #ff4f4f;
+  }
+footer, article, nav, div {
+  padding: 1.2em;
+  background: #ff4f4f;
+}
+
+
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 50px;  
+    grid-template-columns: 1fr;
+ }
+}
+ul{
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #ff4f4f;
+  top: 0%;
+  
+}
+
+li{
+  display: inline;
+  float: right;
+  overflow: hidden;
+  position:right;
+}
+
+li a{
+  display: block;
+  text-decoration: none;
+  padding: 15px 40px;
+  color: black;
+  font-size: 25px;
+   font-family: 'Courier New', monospace;
+  
+}
+
+
+
+a:hover{
+  background: #44c767;
+  color: black;
+  
+}
+
+div.par{
+  background-color: ;
+  display: block;
+  text-decoration: none;
+  padding: 0px 40px;
+  color: Black;
+  font-size: 45px;
+  font-family:'Courier New', monospace;
+  font-weight: bold;
+  
+}
+
+div.HM{
+  color: black;
+  font-size: 25px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold; 
+  
+}
+
+
+img{
+  position: absolute;
+  top: 240%;
+  right: 10%;
+}
+  
+}
+
   
 </style>
 
