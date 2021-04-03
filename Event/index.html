@@ -1,1 +1,140 @@
 
+<html>
+  <body>
+  
+  
+  <div id="navbar"> 
+  <ul class="nav">
+  <li><a href="#">About</a></li>
+  <li><a href="#">Location</a></li>
+  <li><a href="#">Prep></li>
+  <li><a href="#">Pictures</a></li>
+</ul>
+</div> 
+  
+  
+<br></br><br></br>
+
+<!-- FLUID GRID -->
+
+<ul id="Grid">
+  <li></li>
+  
+  <li></li>
+  
+  <li></li>
+  
+  <li></li>
+  
+  
+  
+  
+  </body>
+
+<style>
+  
+  body{
+  Background-color: #ff4f4f;
+}
+
+
+#navbar ul { 
+	margin: 0; 
+	padding: 15px; 
+	list-style-type: none; 
+	text-align: center; 
+	background-color: #44c767; 
+	} 
+ 
+#navbar ul li {  
+	display: inline; 
+	} 
+ 
+#navbar ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: black; 
+	background-color: #44c767; 
+  font-family: "Lucida Console", "Courier New", monospace;
+	} 
+ 
+#navbar ul li a:hover { 
+	color: #000; 
+	background-color: #ff4f4f; 
+	} 
+
+
+
+
+div, ul, li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* -- FLUID GRID STYLES -- */
+
+#Grid{
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+#Grid li{
+  display: inline-block;
+  background: #44c767;
+  width: 46%;
+  padding-top: 46%; 
+  margin-bottom: 2.5%;
+}
+
+#Grid:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+#Grid .placeholder{
+  padding: 0;
+  border-top: 10px solid #922d8d; /* Border added to make element visible for demonstration purposes */
+}
+
+/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
+
+/* 3 COL */
+
+@media (max-width: 800px){
+  #Grid li{
+    width: 31%;
+    padding-top: 31%;
+    margin-bottom: 3%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 600px){
+  #Grid li{
+    width: 48%;
+    padding-top: 48%;
+    margin-bottom: 4%;
+  }
+}
+
+/* SINGLE COL */
+
+@media (max-width: 400px){
+  #Grid li{
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+  
+  
+</style>
+
+
+
+</html>
