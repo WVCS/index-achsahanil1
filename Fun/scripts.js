@@ -1,11 +1,21 @@
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
 
-window.onscroll = function() {
-  var el = document.getElementsByClassName('header')[0];
-  var className = 'small';
-  if (el.classList) {
-    if (window.scrollY > 10)
-      el.classList.add(className);
-    else
-      el.classList.remove(className);
-  }
-};
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+
+function topfunction () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function(){hidefunction ()};
+
+function hidefunction () {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+    document.getElementById("topbutton").style.display = "block";
+  else { document.getElementById("topbutton").style.display = "none"; }
+}
