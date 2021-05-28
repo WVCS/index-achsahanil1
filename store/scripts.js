@@ -84,3 +84,5 @@ function autocomplete(inp, arr) {
 var countries = ["Pants", "Skirts", "Shirt", "Sandals", "Shoes", "Dress", "Crop-Top", "Jeans", "Headband", "Rings", "Braclet", "Necklaces",];
 
 autocomplete(document.getElementById("myInput"), countries);
+
+alert("Due to the ongoing Pandemic and lockdowns all times may take longer to ship outside of the US and Canada");
