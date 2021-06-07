@@ -1,307 +1,214 @@
-
+<!DOCTYPE html>
 <html>
-	<body>
-  <header id="pageHeader">    
-    <ul>
-      
-  <li><a href="#pageFooter">Links</a></li>
-  <li><a href="#siteAds">Prep</a></li>
-  <li><a href="#mainNav">Location</a></li>
-  <li><a href="#mainArticle">Info</a></li>
-      
-       <div class="par" style = "position:relative; left:-10%; top:2px;">
-  <li>Watermelon Festival</li>
-         </div>
- 
-</ul>
-    
-  </header>
-  <article id="mainArticle">
-  
-    <div class= "HM">
-  <p>Information</p>
-    <p style = " font-size: 20px;font-weight: normal;" > This is our annual Watermelon Festival. This is an all you can eat, so bring you family, loved ones, freinds and anyone who loves watermelon. This tradtional festival started in the 1920s before the depression. First started by a family named Waterellion, who where the creators of this fantastic friut that we enjoy today.</p>
-      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/dOxWSZ0TlvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif
+Back}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://i.redd.it/b9ptvdhfmgv51.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">MORE INFO</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Watermelon Festival</h1>
+    <p>Once in a Lifetime Event</p>
+    <img src="https://wallsdesk.com/wp-content/uploads/2016/09/Watermelon-Wallpaper.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut scelerisque metus. Donec dignissim, diam rhoncus efficitur lacinia, augue ipsum mollis sapien, non egestas sem sapien ut enim. Suspendisse non quam sit amet augue sagittis commodo quis nec nisl. Pellentesque volutpat in metus vel consequat. Aliquam quis efficitur arcu. Integer facilisis metus nulla, at elementum lorem faucibus id. Vivamus vel commodo nisl, in cursus lorem. Vestibulum dapibus tempus mollis. Nunc facilisis lobortis lacinia. Aenean id semper libero, sed dictum massa. Vivamus porttitor feugiat urna, quis pulvinar dui ullamcorper a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut scelerisque metus. Donec dignissim, diam rhoncus efficitur lacinia, augue ipsum mollis sapien, non egestas sem sapien ut enim. Suspendisse non quam sit amet augue sagittis commodo quis nec nisl. Pellentesque volutpat in metus vel consequat. Aliquam quis efficitur arcu. Integer facilisis metus nulla, at elementum lorem faucibus id. Vivamus vel commodo nisl, in cursus lorem. Vestibulum dapibus tempus mollis. Nunc facilisis lobortis lacinia. Aenean id semper libero, sed dictum massa. Vivamus porttitor feugiat urna, quis pulvinar dui ullamcorper a.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Previous Years Attendance </h3>
+    <p class="w3-wide">2019</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">2018</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">2017</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Types Of Food
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Activities
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Vendors
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Attendees
+      </div>
     </div>
 
     
-  </article>
-  <nav id="mainNav">
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Ticket Prices</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">General Admission</li>
+          <li class="w3-padding-16">Admission for One Person</li>
+          <li class="w3-padding-16">One Free Food Ticket</li>
+          <li class="w3-padding-16">4 free activities passes</li>
+          <li class="w3-padding-16">
+            <h2>$ 30</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Premium Pass</li>
+          <li class="w3-padding-16">Admission for One Person</li>
+          <li class="w3-padding-16">Four Free Food Tickets</li>
+          <li class="w3-padding-16">25 free activities passes</li>
+          <li class="w3-padding-16">Early Acess</li>
+          <li class="w3-padding-16">Close Parking</li>
+          <li class="w3-padding-16">
+            <h2>$ 75</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
     
-    <div class= "HM">
-  <p>Location</p>
-    <p style = " font-size: 20px;font-weight: normal;" > We meet in Fresno California.
-      </p>
-      <a href="https://randomstreetview.com/" target="_blank">press this here for the EXACT location</a> <p style = " font-size: 20px;font-weight: normal;"> Yup, that is definetly the correct place</p> </div>
-  
-  </nav>
-  <div id="siteAds">
-    
-     <div class= "HM">
-  <p>Preperation</p> 
-       <p style = " font-size: 20px;font-weight: normal;" > Just bring your self and a change of cloths. It is a one day event that is held on June 16th.</p>
-       </div>
-    
-    
-    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Last Years Video</h3>  
+      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/dOxWSZ0TlvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+  <!-- End About Section -->
   </div>
-  <footer id="pageFooter">
-    
-     <div class= "HM">
-       
-  <p>Links... Nope, but here is our logo</p> 
-       
-       </div>
-   
-    <img src= " https://i.redd.it/b9ptvdhfmgv51.png" style="height:170px;width:170px;">
-    
-    
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Event Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/09/AN335-Watermelon-732x549-Thumb-732x549.jpg?w=756&h=567" style="width:100%">
+        <img src="https://www.thespruce.com/thmb/8TH_yJ_LXs3erJR9QmPQaoHGmF4=/2827x2827/smart/filters:no_upscale()/when-to-harvest-watermelon-2539591-04-f7f99d3a73d846cb9d453f8a6f0cc7ee.jpg" style="width:100%">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Grilled_watermelon.JPG" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://static.onecms.io/wp-content/uploads/sites/24/2019/03/gettyimages-1084242960-2000.jpg" style="width:100%">
+        <img src="https://img.kidspot.com.au/3qjzdyJe/kk/2015/04/watermelon_pops-jpg-502781-1.jpg" style="width:100%">
+        <img src="https://images.media-allrecipes.com/userphotos/6343945.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">More Info</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US, March 19th</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
   </footer>
-     
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
-
-<style>
-  
- body { 
-  Background-color: #ff4f4f;
-  display: grid;
-  grid-template-areas: 
-    "header header"
-    "nav article"
-    "ads article"
-    "ads footer";
-  grid-template-rows: 80px 1fr 150px 170px;  
-  grid-template-columns: 20% 1fr;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  height: 100vh;
-  margin: 0;
-  }  
-header{
-  padding: 1.2em;
-  background: #44c767;
-  }
-footer, article, nav, div {
-  padding: 1.2em;
-  background: #44c767;
-}
-
-
-#pageHeader {
-  grid-area: header;
-  }
-#pageFooter {
-  grid-area: footer;
-  }
-#mainArticle { 
-  grid-area: article;      
-  }
-#mainNav { 
-  grid-area: nav; 
-  }
-#siteAds { 
-  grid-area: ads; 
-  } 
-/* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
-  body { 
-    grid-template-areas: 
-      "header"
-      "article"
-      "ads"
-      "nav"
-      "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 50px;  
-    grid-template-columns: 1fr;
- }
-}
-ul{
-  list-style-type: none;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background: #44c767;
-  top: 0%;
-  
-}
-
-li{
-  display: inline;
-  float: right;
-  overflow: hidden;
-  position:right;
-}
-
-li a{
-  display: block;
-  text-decoration: none;
-  padding: 15px 40px;
-  color: black;
-  font-size: 25px;
-   font-family: 'Courier New', monospace;
-  
-}
-
-
-
-a:hover{
-  background: #ff4f4f;
-  color: black;
-  
-}
-
-div.par{
-  background-color: ;
-  display: block;
-  text-decoration: none;
-  padding: 0px 40px;
-  color: Black;
-  font-size: 45px;
-  font-family:'Courier New', monospace;
-  font-weight: bold;
-  
-}
-
-div.HM{
-  color: black;
-  font-size: 25px;
-  font-family: 'Courier New', monospace;
-  font-weight: bold; 
-  
-}
-
-
-img{
-  position: absolute;
-  top: 100%;
-  right: 10%;
-}
-
-@media (max-width: 800px){
-  
-  body { 
-  Background-color: #44c767;
-  display: grid;
-  grid-template-areas: 
-    "header header"
-    "nav article"
-    "ads article"
-    "ads footer";
-  grid-template-rows: 80px 1fr 150px 170px;
-  grid-template-columns: 20% 1fr;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  height: 100vh;
-  margin: 0;
-  }  
-header{
-  padding: 1.2em;
-  background: #ff4f4f;
-  }
-footer, article, nav, div {
-  padding: 1.2em;
-  background: #ff4f4f;
-}
-
-
-#pageHeader {
-  grid-area: header;
-  }
-#pageFooter {
-  grid-area: footer;
-  }
-#mainArticle { 
-  grid-area: article;      
-  }
-#mainNav { 
-  grid-area: nav; 
-  }
-#siteAds { 
-  grid-area: ads; 
-  } 
-/* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
-  body { 
-    grid-template-areas: 
-      "header"
-      "article"
-      "ads"
-      "nav"
-      "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 50px;  
-    grid-template-columns: 1fr;
- }
-}
-ul{
-  list-style-type: none;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background: #ff4f4f;
-  top: 0%;
-  
-}
-
-li{
-  display: inline;
-  float: right;
-  overflow: hidden;
-  position:right;
-}
-
-li a{
-  display: block;
-  text-decoration: none;
-  padding: 15px 40px;
-  color: black;
-  font-size: 25px;
-   font-family: 'Courier New', monospace;
-  
-}
-
-
-
-a:hover{
-  background: #44c767;
-  color: black;
-  
-}
-
-div.par{
-  background-color: ;
-  display: block;
-  text-decoration: none;
-  padding: 0px 40px;
-  color: Black;
-  font-size: 45px;
-  font-family:'Courier New', monospace;
-  font-weight: bold;
-  
-}
-
-div.HM{
-  color: black;
-  font-size: 25px;
-  font-family: 'Courier New', monospace;
-  font-weight: bold; 
-  
-}
-
-
-img{
-  position: absolute;
-  top: 240%;
-  right: 10%;
-}
-  
-}
-
-  
-</style>
-
-
-
 </html>
